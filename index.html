@@ -49,67 +49,69 @@
 
     <main id="main">
          <!-- header   -->
-         <header class="navbar">
-          <div class="navbar-content" id="navbarDown">
-            <a class="mask-1 close">Designer</a>
+      <header class="navbar">
+        <div class="navbar-content" id="navbarDown">
+          <a class="mask-1 close">Designer</a>
+          <span class="text-container">
+            <button class="mask-1 menu-btn left-to-right">MENU +</button>
+          </span>
+          <div class="navbar-menu">
             <span class="text-container">
-              <button class="mask-1 menu-btn left-to-right">MENU +</button>
+              <a href="./" class="mask-1 left-to-right">Home</a>
             </span>
-            <div class="navbar-menu">
-              <span class="text-container">
-                <a href="./" class="mask-1 left-to-right">Home</a>
-              </span>
-              <span class="text-container">
-                <a href="./work.html" class="mask-1 left-to-right">Work</a>
-              </span>
-              <span class="text-container">
-                <a href="./playground.html" class="mask-1 left-to-right">Playground</a>
-              </span>
-              <span class="text-container">
-                <a href="./" class="mask-1 left-to-right">Contact</a>
-              </span>
+            <span class="text-container">
+              <a href="./work.html" class="mask-1 left-to-right">Work</a>
+            </span>
+            <span class="text-container">
+              <a href="./playground.html" class="mask-1 left-to-right"
+                >Playground</a
+              >
+            </span>
+            <span class="text-container">
+              <a href="./" class="mask-1 left-to-right">Contact</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="navbar-mobile">
+          <div class="left">
+            <span class="text-container">
+              <a href="./" class="mask-1">Designer</a>
+            </span>
+          </div>
+          <div class="right">
+            <span class="text-container">
+              <button class="mask-1 left-to-right aside-open">MENU +</button>
+            </span>
+          </div>
+        </div>
+
+        <div class="mobile-aside">
+          <div class="aside__header">
+            <a href="./"> Designer</a>
+            <a class="aside-close left-to-right-dark mask-1">Close</a>
+          </div>
+          <div class="aside__links">
+            <a href="./" class="active"> Home</a>
+            <a href="./work.html"> Work</a>
+            <a href="./playground.html"> Playground</a>
+            <a href="#"> Contact</a>
+          </div>
+          <div class="aside__footer">
+            <div class="aside__footer-top">
+              <a href="#" class="left-to-right-dark mask-1">Linkdin</a>
+              <a href="#" class="left-to-right-dark mask-1">X/Twitter</a>
+              <a href="#" class="left-to-right-dark mask-1">Instagram</a>
+              <a href="#" class="left-to-right-dark mask-1">Youtube</a>
+            </div>
+            <span class="breaker"></span>
+            <div class="aside__footer-bottom">
+              <p class="year">@ 0000</p>
+              <p class="date">00:00  ET</p>
             </div>
           </div>
-  
-          <div class="navbar-mobile">
-            <div class="left">
-              <span class="text-container">
-                <a href="./" class="mask-1">Designer</a>
-              </span>
-            </div>
-            <div class="right">
-              <span class="text-container">
-                <button class="mask-1 left-to-right aside-open">MENU +</button>
-              </span>
-            </div>
-          </div>
-  
-          <div class="mobile-aside">
-            <div class="aside__header">
-              <a href="./"> Designer</a>
-              <a class="aside-close left-to-right-dark mask-1">Close</a>
-            </div>
-            <div class="aside__links">
-              <a href="./" class="active"> Home</a>
-              <a href="./work.html"> Work</a>
-              <a href="./playground.html"> Playground</a>
-              <a href="#"> Contact</a>
-            </div>
-            <div class="aside__footer">
-              <div class="aside__footer-top">
-                <a href="#" class="left-to-right-dark mask-1">Linkdin</a>
-                <a href="#" class="left-to-right-dark mask-1">X/Twitter</a>
-                <a href="#" class="left-to-right-dark mask-1">Instagram</a>
-                <a href="#" class="left-to-right-dark mask-1">Youtube</a>
-              </div>
-              <span class="breaker"></span>
-              <div class="aside__footer-bottom">
-                <p>@ 2024</p>
-                <p>12:am ET</p>
-              </div>
-            </div>
-          </div>
-        </header>
+        </div>
+      </header>
 
       <!-- hero  -->
       <section class="hero">
@@ -283,37 +285,41 @@
 
 
 
+ <!-- footer  -->
+ <footer class="footer" >
+  <div class="footer-content">
+    <div class="left">
+      <a href="" class="year"> &copy; 0000</a>
+      <a href="" class="date"> 00:00 PM ET </a>
+    </div>
+    <div class="right">
+      <a href="" class="mask-1 left-to-right"> Linkdin </a>
+      <a href="" class="mask-1 left-to-right"> X/Twitter </a>
+      <a href="" class="mask-1 left-to-right"> Instagram </a>
+      <a href="" class="mask-1 left-to-right"> Youtube </a>
+    </div>
+  </div>
+  <script>
+    setInterval(() => {
+      let date = document.querySelectorAll('.date')
+      let year = document.querySelectorAll(".year")
+      
+      let time = new Date().toLocaleString(undefined, {timeZone: 'Asia/Kolkata'}); 
 
-      <!-- footer  -->
-      <footer class="footer" >
-        <div class="footer-content">
-          <div class="left">
-            <a href="" class="year"> &copy; 0000</a>
-            <a href="" class="date"> 00:00 PM ET </a>
-          </div>
-          <div class="right">
-            <a href="" class="mask-1 left-to-right"> Linkdin </a>
-            <a href="" class="mask-1 left-to-right"> X/Twitter </a>
-            <a href="" class="mask-1 left-to-right"> Instagram </a>
-            <a href="" class="mask-1 left-to-right"> Youtube </a>
-          </div>
-        </div>
-        <script>
-          setInterval(() => {
-            var time = new Date().toLocaleString(undefined, {timeZone: 'Asia/Kolkata'}); 
-
-            time = time.slice(12,17)
-            document.querySelector(".date").innerHTML = `${time} EST IND`
-
-
-            var year = new Date().getFullYear()
-            document.querySelector('.year').innerHTML = year
-          },1000)
-          </script>
+      date.forEach(element => {
+        element.innerHTML= `${time.slice(12,17)} EST IND`
+      });
 
 
+      year.forEach(element => {
+        var year = new Date().getFullYear()
+        element.innerHTML= `&copy; ${year}`
+      });
 
-      </footer>
+      // document.querySelector('.year').innerHTML = `&copy; ${year}`
+    },1000)
+    </script>
+</footer>
 
 
     </main>

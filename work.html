@@ -89,8 +89,8 @@
             <a class="aside-close left-to-right-dark mask-1">Close</a>
           </div>
           <div class="aside__links">
-            <a href="./" class="active"> Home</a>
-            <a href="./work.html"> Work</a>
+            <a href="./"> Home</a>
+            <a href="./work.html" class="active"> Work</a>
             <a href="./playground.html"> Playground</a>
             <a href="#"> Contact</a>
           </div>
@@ -103,8 +103,8 @@
             </div>
             <span class="breaker"></span>
             <div class="aside__footer-bottom">
-              <p>@ 2024</p>
-              <p>12:am ET</p>
+              <p class="year">@ 0000</p>
+              <p class="date">00:00  ET</p>
             </div>
           </div>
         </div>
@@ -505,12 +505,13 @@
         </div>
       </section>
 
-      <!-- footer  -->
-      <footer class="footer">
+    
+       <!-- footer  -->
+       <footer class="footer" >
         <div class="footer-content">
           <div class="left">
-            <a href=""> &copy; 2024 </a>
-            <a href=""> 11:45 PM ET </a>
+            <a href="" class="year"> &copy; 0000</a>
+            <a href="" class="date"> 00:00 PM ET </a>
           </div>
           <div class="right">
             <a href="" class="mask-1 left-to-right"> Linkdin </a>
@@ -519,15 +520,34 @@
             <a href="" class="mask-1 left-to-right"> Youtube </a>
           </div>
         </div>
+        <script>
+          setInterval(() => {
+            let date = document.querySelectorAll('.date')
+            let year = document.querySelectorAll(".year")
+            
+            let time = new Date().toLocaleString(undefined, {timeZone: 'Asia/Kolkata'}); 
+
+            date.forEach(element => {
+              element.innerHTML= `${time.slice(12,17)} EST IND`
+            });
+
+
+            year.forEach(element => {
+              var year = new Date().getFullYear()
+              element.innerHTML= `&copy; ${year}`
+            });
+
+          },1000)
+          </script>
       </footer>
     </main>
 
+    <script src="./scripts/work.js"></script>
     <script src="./scripts/pointer.js"></script>
     <script src="./scripts/loader.js"></script>
     <script src="./scripts/navbar.js"></script>
     <script src="./scripts/scroll.js"></script>
     <script src="./scripts/mask.js"></script>
-    <script src="./scripts/work.js"></script>
     <script src="./scripts/workpage.js"></script>
   </body>
 </html>

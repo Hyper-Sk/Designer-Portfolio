@@ -1,6 +1,6 @@
 function stickyNavbar() {
   var prevScrollpos = window.pageYOffset;
-  console.log(prevScrollpos);
+  // console.log(prevScrollpos);
 
   window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;

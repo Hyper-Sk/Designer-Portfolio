@@ -1,5 +1,5 @@
 .work-overview {
-  margin-top: 10rem;
+  padding-top: 10rem;
   /* margin-inline: 1rem; */
   padding-bottom: 2rem;
 }
@@ -110,7 +110,7 @@
 }
 
 .gridwork__single .text h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   font-family: GeneralSans-Medium;
   color: var(--theme-text);

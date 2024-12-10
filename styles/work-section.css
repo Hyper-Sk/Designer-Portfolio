@@ -93,8 +93,8 @@
 }
 @media screen and (max-width: 576px) {
   .work-content .elem img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
   }
   .work-content .elem h3 {
     font-size: 2rem;

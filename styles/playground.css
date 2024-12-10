@@ -28,7 +28,7 @@
 }
 @media screen and (max-width: 576px) {
   .playground-heading h1 {
-    font-size: 2rem;
+    /* font-size: 3rem; */
   }
   .playground-heading h5 {
     font-size: 16px;
