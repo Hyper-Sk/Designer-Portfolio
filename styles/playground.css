@@ -4,6 +4,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 .playground-heading h1 {
   font-size: 10vw;
@@ -62,6 +64,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .playground-heading {
+    gap: 10px;
+  }
   .videos-content .video__single {
     height: 50vh;
   }
