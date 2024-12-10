@@ -90,8 +90,12 @@
 }
 
 @media screen and (max-width: 768px) {
+  .hero-content {
+    padding: 10rem 25px 1rem;
+    height: calc(100vh - 50px);
+  }
   .hero-content .bottom-text-area h5 {
-    font-size: 12px;
+    font-size: 14px;
   }
   .hero-content .bottom-text-area .icons {
     display: none;
@@ -159,6 +163,8 @@
   width: 230px;
   height: 230px;
   margin-left: auto;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .about-content .right {

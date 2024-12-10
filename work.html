@@ -8,13 +8,11 @@
 
     <!-- css  -->
     <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="./styles/header.css" />
-    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/__header.css" />
+    <link rel="stylesheet" href="./styles/__footer.css" />
+    <link rel="stylesheet" href="./styles/__work-section.css" />
+    <link rel="stylesheet" href="./styles/__loader.css" />
     <link rel="stylesheet" href="./styles/work.css" />
-    <link rel="stylesheet" href="./styles/loader.css" />
-    <link rel="stylesheet" href="./styles/work-overview.css" />
-    <link rel="stylesheet" href="./styles/header.css" />
 
     <!-- bootstrap cdn  -->
     <link
@@ -47,8 +45,8 @@
     </div>
 
     <main id="main">
-       <!-- header   -->
-       <header class="navbar">
+      <!-- header   -->
+      <header class="navbar">
         <div class="navbar-content" id="navbarDown">
           <a class="mask-1 close">Designer</a>
           <span class="text-container">
@@ -62,7 +60,9 @@
               <a href="./work.html" class="mask-1 left-to-right">Work</a>
             </span>
             <span class="text-container">
-              <a href="./playground.html" class="mask-1 left-to-right">Playground</a>
+              <a href="./playground.html" class="mask-1 left-to-right"
+                >Playground</a
+              >
             </span>
             <span class="text-container">
               <a href="./" class="mask-1 left-to-right">Contact</a>
@@ -114,7 +114,7 @@
       <div class="work-overview">
         <div class="overview-content">
           <div class="overview-header">
-            <h1>Work <sup>8</sup></h1>
+            <h1>Work <sup>13</sup></h1>
             <div class="overview-btn">
               <p class="list">List</p>
               <p class="grid active">Grid</p>
@@ -123,204 +123,366 @@
           <div class="overview-footer">
             <div class="listview">
               <!-- work  -->
-              <section class="work" id="work">
-                <div class="work-content">
-                  <span class="breaker"></span>
-                  <a href="#" class="elem">
-                    <h3>Lucid Motors</h3>
-                    <h6>2023</h6>
-                    <img src="./images/work/lucid-motors.webp" alt="" />
-                  </a>
-                  <span class="breaker"></span>
-                  <a href="#" class="elem">
-                    <h3>Baron Capital</h3>
-                    <h6>2024</h6>
-                    <img src="./images/work/baron-capital.webp" alt="" />
-                  </a>
-                  <span class="breaker"></span>
-                  <a href="#" class="elem">
-                    <h3>nfl</h3>
-                    <h6>2022</h6>
-                    <img src="./images/work/nfl.webp" alt="" />
-                  </a>
-                  <span class="breaker"></span>
-                  <a href="#" class="elem">
-                    <h3>Placenew</h3>
-                    <h6>2021</h6>
-                    <img src="./images/work/placenew.webp" alt="" />
-                  </a>
-                  <span class="breaker"></span>
-                  <a href="#" class="elem">
-                    <h3>Somos</h3>
-                    <h6>2023</h6>
-                    <img src="./images/work/somos.webp" alt="" />
-                  </a>
-                </div>
-              </section>
+              <div class="work-content">
+                <span class="breaker"></span>
+                <a class="elem">
+                  <h3>Silent Hills - 2</h3>
+                  <h6>2018</h6>
+                  <img src="./images/games/silent-hills-2.jpg" alt="" />
+                </a>
+                <span class="breaker"></span>
+                <a class="elem">
+                  <h3>God Of War</h3>
+                  <h6>2018</h6>
+                  <img src="./images/games/god-of-war.jpg" alt="" />
+                </a>
+                <span class="breaker"></span>
+                <a class="elem">
+                  <h3>Mortal Kombat 1</h3>
+                  <h6>2023</h6>
+                  <img src="./images/games/liu-kang.jpg" alt="" />
+                </a>
+                <span class="breaker"></span>
+                <a  class="elem">
+                  <h3>Prince of Persia</h3>
+                  <h6>2026 </h6>
+                  <img src="./images/games/prince-of-persia.jpg" alt="" />
+                </a>
+                <span class="breaker"></span>
+                <a class="elem">
+                  <h3>GTA VI</h3>
+                  <h6>2026</h6>
+                  <img src="./images/games/grand-theft-auto.jpg" alt="" />
+                </a>
+                <span class="breaker"></span>
+                <a class="elem">
+                  <h3>Devil May Cry</h3>
+                  <h6>2023</h6>
+                  <img src="./images/games/devil-may.jpg" alt="" />
+                </a>
+               
+                <span class="breaker"></span>
+                <a class="elem">
+                  <h3>Rising Revengence</h3>
+                  <h6>2010</h6>
+                  <img src="./images/games/metal-gear.jpg" alt="" />
+                </a>
+                <span class="breaker"></span>
+                <a class="elem">
+                  <h3>Spiderman 2</h3>
+                  <h6>2024</h6>
+                  <img src="./images/games/marvels-spider.jpeg" alt="" />
+                </a>
+                <span class="breaker"></span>
+                <a class="elem">
+                  <h3>Dead Space - 2</h3>
+                  <h6>2010</h6>
+                  <img src="./images/games/dead-space-2.jpg" alt="" />
+                </a>
+                <span class="breaker"></span>
+                <a class="elem">
+                  <h3>Wukong</h3>
+                  <h6>2024</h6>
+                  <img src="./images/games/wokong.jpeg" alt="" />
+                </a>
+                <span class="breaker"></span>
+                <a class="elem">
+                  <h3>NFS - Heat</h3>
+                  <h6>2024</h6>
+                  <img src="./images/games/nfs-heat.jpg" alt="" />
+                </a>
+                <span class="breaker"></span>
+                <a class="elem">
+                  <h3>Forza Horizon - 5</h3>
+                  <h6>2024</h6>
+                  <img src="./images/games/forza horizon.jpg" alt="" />
+                </a>
+                <span class="breaker"></span>
+                <a class="elem">
+                  <h3>Batman - Arkams</h3>
+                  <h6>2024</h6>
+                  <img src="./images/games/batman-arkam.jpg" alt="" />
+                </a>
+              </div>
             </div>
             <div class="gridview">
               <div class="gridview-content">
                 <!-- grid work single  -->
-                <a href="#" class="">
+                <a>
                   <div class="gridwork__single mask-1">
                     <div class="images">
                       <img
-                        src="./images/work/lucid-motors.webp"
+                        src="./images/games/liu-kang.jpg"
                         alt=""
                         class="thumbnail"
                       />
                       <div class="gif-overlay">
-                        <img src="./images/work/lucid.webp" alt="" class="" />
+                        <img src="./images/games/mk-1-gif.webp" alt="" />
                       </div>
                     </div>
                     <div class="text">
-                      <h2>Lucid Motors</h2>
-                      <h5>2023</h5>
+                      <h2>Mortal Kombat 1</h2>
+                      <h5>2024</h5>
                     </div>
                   </div>
                 </a>
 
-                <a href="#">
+                <!-- grid work single  -->
+                <a>
                   <div class="gridwork__single mask-1">
-                    <div class="images ">
+                    <div class="images">
                       <img
-                        src="./images/work/baron-capital.webp"
+                        src="./images/games/god-of-war.jpg"
                         alt=""
                         class="thumbnail"
                       />
                       <div class="gif-overlay">
                         <img
-                          src="./images/work/baron-capital-gif.webp"
+                          src="./images/games/god-of-war-gif.webp"
+                          alt=""
+                          class=""
+                        />
+                      </div>
+                    </div>
+                    <div class="text">
+                      <h2>God Of War</h2>
+                      <h5>2019</h5>
+                    </div>
+                  </div>
+                </a>
+                <!-- grid work single  -->
+                <a>
+                  <div class="gridwork__single mask-1">
+                    <div class="images">
+                      <img
+                        src="./images/games/silent-hills-2.jpg"
+                        alt=""
+                        class="thumbnail"
+                      />
+                      <div class="gif-overlay">
+                        <img
+                          src="./images/games/silent-hills-2-gif.webp"
                           alt=""
                         />
                       </div>
                     </div>
                     <div class="text">
-                      <h2>Baron Capital</h2>
-                      <h5>2023</h5>
+                      <h2>Silent Hills - 2</h2>
+                      <h5>2010</h5>
                     </div>
                   </div>
                 </a>
-
-                <a href="#">
+                <!-- grid work single  -->
+                <a>
                   <div class="gridwork__single mask-1">
                     <div class="images">
                       <img
-                        src="./images/work/nfl.webp"
+                        src="./images/games/marvels-spider.jpeg"
                         alt=""
                         class="thumbnail"
                       />
                       <div class="gif-overlay">
-                        <img src="./images/work/nfl-gif.webp" alt="" />
+                        <img src="./images/games/spiderman-2-gif.webp" alt="" />
                       </div>
                     </div>
                     <div class="text">
-                      <h2>NFL</h2>
-                      <h5>2023</h5>
+                      <h2>Spiderman 2</h2>
+                      <h5>2024</h5>
                     </div>
                   </div>
                 </a>
 
-                <a href="#">
+               
+                <!-- grid work single  -->
+                <a>
                   <div class="gridwork__single mask-1">
                     <div class="images">
                       <img
-                        src="./images/work/placenew.webp"
+                        src="./images/games/devil-may.jpg"
                         alt=""
                         class="thumbnail"
                       />
                       <div class="gif-overlay">
-                        <img src="./images/work/placeenew-gif.webp" alt="" />
+                        <img src="./images/games/dmc-5-gif.webp" alt="" />
                       </div>
                     </div>
                     <div class="text">
-                      <h2>PlaceNew</h2>
-                      <h5>2023</h5>
+                      <h2>Devil May Cry 5</h2>
+                      <h5>2024</h5>
                     </div>
                   </div>
                 </a>
-
-                <a href="#">
+                <!-- grid work single  -->
+                <a>
                   <div class="gridwork__single mask-1">
                     <div class="images">
                       <img
-                        src="./images/work/somos.webp"
+                        src="./images/games/wokong.jpeg"
                         alt=""
                         class="thumbnail"
                       />
                       <div class="gif-overlay">
-                        <img src="./images/work/somos-gif.webp" alt="" />
+                        <img
+                          src="./images/games/https___n_sinaimg.cn_spider20210828_372_w750h422_20210828_1b42-17f34d1291d71a5c5999fb6a24e31a7b.gif"
+                          alt=""
+                        />
                       </div>
                     </div>
                     <div class="text">
-                      <h2>Somos</h2>
-                      <h5>2023</h5>
+                      <h2>Wo Kong</h2>
+                      <h5>2024</h5>
                     </div>
                   </div>
                 </a>
-
-                <a href="#">
+                <!-- grid work single  -->
+                <a>
                   <div class="gridwork__single mask-1">
                     <div class="images">
                       <img
-                        src="./images/work/plug.webp"
+                        src="./images/games/prince-of-persia.jpg"
                         alt=""
                         class="thumbnail"
                       />
                       <div class="gif-overlay">
-                        <img src="./images/work/plug-gif.webp" alt="" />
+                        <img src="./images/games/pop-gif.webp" alt="" />
                       </div>
                     </div>
                     <div class="text">
-                      <h2>The Plug</h2>
+                      <h2>POP Sands of Time</h2>
                       <h5>2023</h5>
                     </div>
                   </div>
                 </a>
-
-                <a href="#">
+                 <!-- grid work single  -->
+                 <a>
                   <div class="gridwork__single mask-1">
                     <div class="images">
                       <img
-                        src="./images/work/ixperience.webp"
+                        src="./images/games/grand-theft-auto.jpg"
                         alt=""
                         class="thumbnail"
                       />
                       <div class="gif-overlay">
-                        <img src="./images/work/ixperience-gif.webp" alt="" />
+                        <img src="./images/games/gta-6-gif.webp" alt="" />
                       </div>
                     </div>
                     <div class="text">
-                      <h2>Ixperience</h2>
-                      <h5>2023</h5>
+                      <h2>GTA - 6</h2>
+                      <h5>2026</h5>
                     </div>
                   </div>
                 </a>
-
-                <a href="#">
+                 <!-- grid work single  -->
+                 <a>
                   <div class="gridwork__single mask-1">
                     <div class="images">
                       <img
-                        src="./images/work/hudu.webp"
+                        src="./images/games/nfs-heat.jpg"
                         alt=""
                         class="thumbnail"
                       />
                       <div class="gif-overlay">
-                        <img src="./images/work/hudu-gif.webp" alt="" />
+                        <img src="./images/games/nfs-heat-gif.webp" alt="" />
                       </div>
                     </div>
                     <div class="text">
-                      <h2>Hudu</h2>
+                      <h2>NFS Heat</h2>
+                      <h5>2010</h5>
+                    </div>
+                  </div>
+                </a>
+                <!-- grid work single  -->
+                <a>
+                  <div class="gridwork__single mask-1">
+                    <div class="images">
+                      <img
+                        src="./images/games/forza horizon.jpg"
+                        alt=""
+                        class="thumbnail"
+                      />
+                      <div class="gif-overlay">
+                        <img
+                          src="./images/games/forza-horizon-5-gif.webp"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="text">
+                      <h2>Forza Horizon 5</h2>
                       <h5>2023</h5>
                     </div>
                   </div>
                 </a>
+               
+                 <!-- grid work single  -->
+                 <a>
+                  <div class="gridwork__single mask-1">
+                    <div class="images">
+                      <img
+                        src="./images/games/metal-gear.jpg"
+                        alt=""
+                        class="thumbnail"
+                      />
+                      <div class="gif-overlay">
+                        <img
+                          src="./images/games/Metal Gear Rising Raiden GIF - Metal Gear Rising Raiden What - Discover & Share GIFs.gif"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="text">
+                      <h2>Metal Gear Rising Revenge</h2>
+                      <h5>2010</h5>
+                    </div>
+                  </div>
+                </a>
+                <!-- grid work single  -->
+                <a>
+                  <div class="gridwork__single mask-1">
+                    <div class="images">
+                      <img
+                        src="./images/games/batman-arkam.jpg"
+                        alt=""
+                        class="thumbnail"
+                      />
+                      <div class="gif-overlay">
+                        <img src="./images/games/batman-gif.webp" alt="" />
+                      </div>
+                    </div>
+                    <div class="text">
+                      <h2>Batman - Arkams</h2>
+                      <h5>2010</h5>
+                    </div>
+                  </div>
+                </a>
+                <!-- grid work single  -->
+                <a>
+                  <div class="gridwork__single mask-1">
+                    <div class="images">
+                      <img
+                        src="./images/games/dead-space-2.jpg"
+                        alt=""
+                        class="thumbnail"
+                      />
+                      <div class="gif-overlay">
+                        <img
+                          src="./images/games/dead-space-2-gif.webp"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="text">
+                      <h2>Dead Space - 2</h2>
+                      <h5>2010</h5>
+                    </div>
+                  </div>
+                </a>
+               
               </div>
             </div>
           </div>
         </div>
       </div>
-
 
       <!-- about  -->
       <section class="files">
@@ -328,13 +490,15 @@
           <div class="left">
             <div class="background">
               <img src="./images/folder.png" alt="" class="thumbnail" />
-              <img src="./images/eye.gif" alt="" class="gif-image">
+              <img src="./images/eye.gif" alt="" class="gif-image" />
             </div>
           </div>
           <div class="right">
             <h6>(NDA who? No worries!)</h6>
             <p class="mask-2">
-              Some of my top-secret works are under wraps due to NDAs, but if you're curious and can keep a secret, shoot me an email! I'll happily share them with you, just don't tell anyone!
+              Some of my top-secret works are under wraps due to NDAs, but if
+              you're curious and can keep a secret, shoot me an email! I'll
+              happily share them with you, just don't tell anyone!
             </p>
             <a href="./" class="">Show me</a>
           </div>
