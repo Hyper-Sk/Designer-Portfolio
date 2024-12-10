@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shaik Sohail</title>
+
+    <!-- css  -->
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/loader.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/playground.css" />
+
+    <!-- bootstrap cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- loco motive js -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+
+    <!-- gsap js  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <!-- cursor  -->
+    <div class="pointer">
+      <span>View</span>
+    </div>
+
+    <!-- loader  -->
+    <div class="loader">
+      <h5>Designer</h5>
+      <div class="track"></div>
+      <h4>100%</h4>
+    </div>
+
+    <main id="main">
+      <!-- header   -->
+      <header class="navbar">
+        <div class="navbar-content" id="navbarDown">
+          <a class="mask-1 close">Designer</a>
+          <span class="text-container">
+            <button class="mask-1 menu-btn left-to-right">MENU +</button>
+          </span>
+          <div class="navbar-menu">
+            <span class="text-container">
+              <a href="./" class="mask-1 left-to-right">Home</a>
+            </span>
+            <span class="text-container">
+              <a href="./work.html" class="mask-1 left-to-right">Work</a>
+            </span>
+            <span class="text-container">
+              <a href="./playground.html" class="mask-1 left-to-right"
+                >Playground</a
+              >
+            </span>
+            <span class="text-container">
+              <a href="./" class="mask-1 left-to-right">Contact</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="navbar-mobile">
+          <div class="left">
+            <span class="text-container">
+              <a href="./" class="mask-1">Designer</a>
+            </span>
+          </div>
+          <div class="right">
+            <span class="text-container">
+              <button class="mask-1 left-to-right aside-open">MENU +</button>
+            </span>
+          </div>
+        </div>
+
+        <div class="mobile-aside">
+          <div class="aside__header">
+            <a href="./"> Designer</a>
+            <a class="aside-close left-to-right-dark mask-1">Close</a>
+          </div>
+          <div class="aside__links">
+            <a href="./" class="active"> Home</a>
+            <a href="./work.html"> Work</a>
+            <a href="./playground.html"> Playground</a>
+            <a href="#"> Contact</a>
+          </div>
+          <div class="aside__footer">
+            <div class="aside__footer-top">
+              <a href="#" class="left-to-right-dark mask-1">Linkdin</a>
+              <a href="#" class="left-to-right-dark mask-1">X/Twitter</a>
+              <a href="#" class="left-to-right-dark mask-1">Instagram</a>
+              <a href="#" class="left-to-right-dark mask-1">Youtube</a>
+            </div>
+            <span class="breaker"></span>
+            <div class="aside__footer-bottom">
+              <p>@ 2024</p>
+              <p>12:am ET</p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- playground title  -->
+      <div class="playground-heading">
+        <h1>Playground</h1>
+        <h5>Brain Dump</h5>
+      </div>
+
+      <!-- playground videos  -->
+      <div class="playground-videos">
+        <div class="videos-content">
+          <!-- <div class="video__single">
+                <video src="./videos/lambo.mp4" autoplay loop>
+                </video>
+            </div> -->
+          <div class="video__single">
+            <video src="./videos/animation7.mp4" autoplay loop></video>
+          </div>
+          <!-- <div class="video__single">
+                <video src="./videos/animation8.mp4" autoplay loop>
+                </video>
+            </div> -->
+          <div class="video__single">
+            <video src="./videos/animation1.mp4" autoplay loop></video>
+          </div>
+          <div class="video__single">
+            <video src="./videos/animation2.mp4" autoplay loop></video>
+          </div>
+          <div class="video__single">
+            <video src="./videos/animation3.mp4" autoplay loop></video>
+          </div>
+          <div class="video__single">
+            <video src="./videos/animation4.mp4" autoplay loop></video>
+          </div>
+          <div class="video__single">
+            <video src="./videos/animation5.mp4" autoplay loop></video>
+          </div>
+          <div class="video__single">
+            <video src="./videos/animation10.mp4" autoplay loop></video>
+          </div>
+          <div class="video__single">
+            <video src="./videos/animation11.mp4" autoplay loop></video>
+          </div>
+          <div class="video__single">
+            <video src="./videos/animation12.mp4" autoplay loop></video>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer  -->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="left">
+            <a href=""> &copy; 2024 </a>
+            <a href=""> 11:45 PM ET </a>
+          </div>
+          <div class="right">
+            <a href="" class="mask-1 left-to-right"> Linkdin </a>
+            <a href="" class="mask-1 left-to-right"> X/Twitter </a>
+            <a href="" class="mask-1 left-to-right"> Instagram </a>
+            <a href="" class="mask-1 left-to-right"> Youtube </a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./scripts/pointer.js"></script>
+    <script src="./scripts/loader.js"></script>
+    <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/scroll.js"></script>
+    <script src="./scripts/mask.js"></script>
+    <script src="./scripts/work.js"></script>
+    <script src="./scripts/workpage.js"></script>
+  </body>
+</html>
