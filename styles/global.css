@@ -128,6 +128,12 @@ span {
   font-family: GeneralSans-Medium;
 }
 
+
+@media screen and (max-width:576px) {
+  .pointer {
+    display: none;
+  }
+}
 .left-to-right{
   border: none;
   cursor: pointer;
