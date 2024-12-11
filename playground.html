@@ -12,13 +12,12 @@
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/playground.css" />
- 
+
     <!-- bootstrap cdn  -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-
 
     <!-- gsap js  -->
     <script
@@ -38,8 +37,21 @@
     <div class="loader">
       <h5>Designer</h5>
       <div class="track"></div>
-      <h4>100%</h4>
+      <h4>0%</h4>
     </div>
+    <script>
+      let loaderPercentage = document.querySelector(".loader h4");
+      let count = 0
+      let counterLoader = setInterval(()=>{
+        loaderPercentage.innerHTML = `${count}%`;
+        if(count <= 99){
+          count = count + 5
+          console.log(count)
+        }else{
+          clearInterval(counterLoader);
+        }
+      },100)
+    </script>
 
     <main id="main">
       <!-- header   -->
@@ -86,7 +98,7 @@
             <a class="aside-close left-to-right-dark mask-1">Close</a>
           </div>
           <div class="aside__links">
-            <a href="./" > Home</a>
+            <a href="./"> Home</a>
             <a href="./work.html"> Work</a>
             <a href="./playground.html" class="active"> Playground</a>
             <a href="#"> Contact</a>
@@ -101,7 +113,7 @@
             <span class="breaker"></span>
             <div class="aside__footer-bottom">
               <p class="year">@ 0000</p>
-              <p class="date">00:00  ET</p>
+              <p class="date">00:00 ET</p>
             </div>
           </div>
         </div>
@@ -117,71 +129,72 @@
       <div class="playground-videos">
         <div class="videos-content scrub1">
           <div class="video__single">
-            <video src="./videos/movie-750.mp4" autoplay loop></video>
+            <video src="./videos/movie-750.mp4" autoplay muted loop></video>
           </div>
           <div class="video__single">
-            <video src="./videos/madza.mp4" autoplay loop></video>
+            <video src="./videos/madza.mp4" muted autoplay loop muted></video>
           </div>
           <div class="video__single">
-            <video src="./videos/liam-750.mp4" autoplay loop></video>
+            <video src="./videos/liam-750.mp4" autoplay loop muted></video>
           </div>
           <div class="video__single">
-            <video src="./videos/perfume-750.mp4" autoplay loop></video>
-          </div>
-
-          <div class="video__single">
-            <video src="./videos/horizon-750.mp4" autoplay loop></video>
-          </div>
-          <div class="video__single">
-            <video src="./videos/finance-750.mp4" autoplay loop></video>
-          </div>
-          <div class="video__single">
-            <video src="./videos/donut-750.mp4" autoplay loop></video>
-          </div>
-          <div class="video__single">
-            <video src="./videos/book-app-750.mp4" autoplay loop></video>
-          </div>
-        </div>
-
-        <div class="videos-content scrub2">
-         
-          <div class="video__single">
-            <video src="./videos/animation1.mp4" autoplay loop></video>
+            <video src="./videos/perfume-750.mp4" autoplay loop muted></video>
           </div>
 
           <div class="video__single">
-            <video src="./videos/animation2.mp4" autoplay loop></video>
+            <video src="./videos/horizon-750.mp4" autoplay loop muted></video>
           </div>
           <div class="video__single">
-            <video src="./videos/animation3.mp4" autoplay loop></video>
+            <video src="./videos/finance-750.mp4" autoplay loop muted></video>
           </div>
           <div class="video__single">
-            <video src="./videos/animation4.mp4" autoplay loop></video>
+            <video src="./videos/donut-750.mp4" autoplay loop muted></video>
           </div>
           <div class="video__single">
-            <video src="./videos/animation5.mp4" autoplay loop></video>
-          </div>
-          <div class="video__single">
-            <video src="./videos/animation6.mp4" autoplay loop></video>
-          </div>
-          <div class="video__single">
-            <video src="./videos/animation7.mp4" autoplay loop></video>
-          </div>
-          <div class="video__single">
-            <video src="./videos/animation8.mp4" autoplay loop></video>
-          </div>
-          <div class="video__single">
-            <video src="./videos/animation9.mp4" autoplay loop></video>
-          </div>
-          <div class="video__single">
-            <video src="./videos/animation10.mp4" autoplay loop></video>
+            <video src="./videos/book-app-750.mp4" autoplay loop muted></video>
           </div>
         </div>
       </div>
 
-    
+      <!-- playground videos  -->
+      <div class="playground-videos">
+        <div class="videos-content scrub2">
+          <div class="video__single">
+            <video src="./videos/animation1.mp4" autoplay loop muted></video>
+          </div>
+
+          <div class="video__single">
+            <video src="./videos/animation2.mp4" autoplay loop muted></video>
+          </div>
+          <div class="video__single">
+            <video src="./videos/animation3.mp4" autoplay loop muted></video>
+          </div>
+          <div class="video__single">
+            <video src="./videos/animation4.mp4" autoplay loop muted></video>
+          </div>
+          <div class="video__single">
+            <video src="./videos/animation5.mp4" autoplay loop muted></video>
+          </div>
+          <div class="video__single">
+            <video src="./videos/animation6.mp4" autoplay loop muted></video>
+          </div>
+          <div class="video__single">
+            <video src="./videos/animation7.mp4" autoplay loop muted></video>
+          </div>
+          <div class="video__single">
+            <video src="./videos/animation8.mp4" autoplay loop muted></video>
+          </div>
+          <div class="video__single">
+            <video src="./videos/animation9.mp4" autoplay loop muted></video>
+          </div>
+          <div class="video__single">
+            <video src="./videos/animation10.mp4" autoplay loop muted></video>
+          </div>
+        </div>
+      </div>
+
       <!-- footer  -->
-      <footer class="footer" >
+      <footer class="footer">
         <div class="footer-content">
           <div class="left">
             <a href="" class="year"> &copy; 0000</a>
@@ -196,24 +209,25 @@
         </div>
         <script>
           setInterval(() => {
-            let date = document.querySelectorAll('.date')
-            let year = document.querySelectorAll(".year")
-            
-            let time = new Date().toLocaleString(undefined, {timeZone: 'Asia/Kolkata'}); 
+            let date = document.querySelectorAll(".date");
+            let year = document.querySelectorAll(".year");
 
-            date.forEach(element => {
-              element.innerHTML= `${time.slice(12,17)} EST IND`
+            let time = new Date().toLocaleString(undefined, {
+              timeZone: "Asia/Kolkata",
             });
 
+            date.forEach((element) => {
+              element.innerHTML = `${time.slice(12, 17)} EST IND`;
+            });
 
-            year.forEach(element => {
-              var year = new Date().getFullYear()
-              element.innerHTML= `&copy; ${year}`
+            year.forEach((element) => {
+              var year = new Date().getFullYear();
+              element.innerHTML = `&copy; ${year}`;
             });
 
             // document.querySelector('.year').innerHTML = `&copy; ${year}`
-          },1000)
-          </script>
+          }, 1000);
+        </script>
       </footer>
     </main>
 
