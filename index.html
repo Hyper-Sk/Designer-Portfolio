@@ -44,7 +44,20 @@
     <div class="loader">
       <h5>Designer</h5>
       <div class="track"></div>
-      <h4>100%</h4>
+      <h4>0%</h4>
+    <script>
+      let loaderPercentage = document.querySelector(".loader h4");
+      let count = 0
+      let counterLoader = setInterval(()=>{
+        loaderPercentage.innerHTML = `${count}%`;
+        if(count <= 99){
+          count = count + 5
+          console.log(count)
+        }else{
+          clearInterval(counterLoader);
+        }
+      },100)
+    </script>
     </div>
 
     <main id="main">

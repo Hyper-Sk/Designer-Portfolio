@@ -41,7 +41,20 @@
     <div class="loader">
       <h5>Designer</h5>
       <div class="track"></div>
-      <h4>100%</h4>
+      <h4>0%</h4>
+      <script>
+        let loaderPercentage = document.querySelector(".loader h4");
+        let count = 0;
+        let counterLoader = setInterval(() => {
+          loaderPercentage.innerHTML = `${count}%`;
+          if (count <= 99) {
+            count = count + 5;
+            console.log(count);
+          } else {
+            clearInterval(counterLoader);
+          }
+        }, 100);
+      </script>
     </div>
 
     <main id="main">
@@ -104,7 +117,7 @@
             <span class="breaker"></span>
             <div class="aside__footer-bottom">
               <p class="year">@ 0000</p>
-              <p class="date">00:00  ET</p>
+              <p class="date">00:00 ET</p>
             </div>
           </div>
         </div>
@@ -143,9 +156,9 @@
                   <img src="./images/games/liu-kang.jpg" alt="" />
                 </a>
                 <span class="breaker"></span>
-                <a  class="elem">
+                <a class="elem">
                   <h3>Prince of Persia</h3>
-                  <h6>2026 </h6>
+                  <h6>2026</h6>
                   <img src="./images/games/prince-of-persia.jpg" alt="" />
                 </a>
                 <span class="breaker"></span>
@@ -160,7 +173,7 @@
                   <h6>2023</h6>
                   <img src="./images/games/devil-may.jpg" alt="" />
                 </a>
-               
+
                 <span class="breaker"></span>
                 <a class="elem">
                   <h3>Rising Revengence</h3>
@@ -292,7 +305,6 @@
                   </div>
                 </a>
 
-               
                 <!-- grid work single  -->
                 <a>
                   <div class="gridwork__single mask-1">
@@ -353,8 +365,8 @@
                     </div>
                   </div>
                 </a>
-                 <!-- grid work single  -->
-                 <a>
+                <!-- grid work single  -->
+                <a>
                   <div class="gridwork__single mask-1">
                     <div class="images">
                       <img
@@ -372,8 +384,8 @@
                     </div>
                   </div>
                 </a>
-                 <!-- grid work single  -->
-                 <a>
+                <!-- grid work single  -->
+                <a>
                   <div class="gridwork__single mask-1">
                     <div class="images">
                       <img
@@ -413,9 +425,9 @@
                     </div>
                   </div>
                 </a>
-               
-                 <!-- grid work single  -->
-                 <a>
+
+                <!-- grid work single  -->
+                <a>
                   <div class="gridwork__single mask-1">
                     <div class="images">
                       <img
@@ -477,7 +489,6 @@
                     </div>
                   </div>
                 </a>
-               
               </div>
             </div>
           </div>
@@ -505,9 +516,8 @@
         </div>
       </section>
 
-    
-       <!-- footer  -->
-       <footer class="footer" >
+      <!-- footer  -->
+      <footer class="footer">
         <div class="footer-content">
           <div class="left">
             <a href="" class="year"> &copy; 0000</a>
@@ -522,23 +532,23 @@
         </div>
         <script>
           setInterval(() => {
-            let date = document.querySelectorAll('.date')
-            let year = document.querySelectorAll(".year")
-            
-            let time = new Date().toLocaleString(undefined, {timeZone: 'Asia/Kolkata'}); 
+            let date = document.querySelectorAll(".date");
+            let year = document.querySelectorAll(".year");
 
-            date.forEach(element => {
-              element.innerHTML= `${time.slice(12,17)} EST IND`
+            let time = new Date().toLocaleString(undefined, {
+              timeZone: "Asia/Kolkata",
             });
 
-
-            year.forEach(element => {
-              var year = new Date().getFullYear()
-              element.innerHTML= `&copy; ${year}`
+            date.forEach((element) => {
+              element.innerHTML = `${time.slice(12, 17)} EST IND`;
             });
 
-          },1000)
-          </script>
+            year.forEach((element) => {
+              var year = new Date().getFullYear();
+              element.innerHTML = `&copy; ${year}`;
+            });
+          }, 1000);
+        </script>
       </footer>
     </main>
 
